@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <button id="themeToggle">🌙</button>
+      <button id="unitToggle">°F</button>
+    </div>
+
+    <header>
+      <h1>🌤️ Weather App</h1>
+    </header>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="searchBtn">Search</button>
+      <button id="geoBtn" title="Use my location"><i class="bi bi-geo-alt"></i></button>
+    </div>
+
+    <div class="recent-searches" id="recentSearches"></div>
+
+    <div class="loader" id="loader"></div>
+
+    <div class="weather-result" id="weatherResult"></div>
+
+    <div class="forecast" id="forecast"></div>
+
+    <div class="error" id="errorMsg"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
